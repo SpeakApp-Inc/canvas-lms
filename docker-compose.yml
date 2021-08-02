@@ -4,6 +4,7 @@ services:
   web: &WEB
     build:
       context: .
+    image: conversifi/canvas-lms:latest
     links:
       - postgres
       - redis
